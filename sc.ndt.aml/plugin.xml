@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+
+<!--
+-->
+
+<plugin>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated airfoil-schema-ext -->
+      <package
+            uri="http://www.mh-aerotools.de/airfoil-schema"
+            class="de.aerotools.mh.airfoil.schema.SchemaPackage"
+            genModel="model/airfoil-schema-ext.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.extension_parser">
+      <!-- @generated airfoil-schema-ext -->
+      <parser
+            type="schema"
+            class="de.aerotools.mh.airfoil.schema.util.SchemaResourceFactoryImpl"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated airfoil-schema -->
+      <package
+            uri="http://www.stefanocottafavi.com/airfoil-schema"
+            class="com.stefanocottafavi.airfoil.schema.SchemaPackage"
+            genModel="model/airfoil-schema.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.extension_parser">
+      <!-- @generated airfoil-schema -->
+      <parser
+            type="schema"
+            class="com.stefanocottafavi.airfoil.schema.util.SchemaResourceFactoryImpl"/>
+   </extension>
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated airfoil -->
+      <package
+            uri="http://www.stefanocottafavi.com/airfoil"
+            class="com.stefanocottafavi.airfoil.AirfoilPackage"
+            genModel="model/airfoil.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.extension_parser">
+      <!-- @generated airfoil -->
+      <parser
+            type="airfoil"
+            class="com.stefanocottafavi.airfoil.util.AirfoilResourceFactoryImpl"/>
+   </extension>
+</plugin>

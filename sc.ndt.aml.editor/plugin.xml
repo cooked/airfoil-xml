@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+
+<!--
+-->
+
+<plugin>
+
+   <extension point="org.eclipse.ui.newWizards">
+      <!-- @generated airfoil-schema -->
+      <category
+            id="org.eclipse.emf.ecore.Wizard.category.ID"
+            name="%_UI_Wizard_category"/>
+      <wizard
+            id="com.stefanocottafavi.airfoil.presentation.AirfoilModelWizardID"
+            name="%_UI_AirfoilModelWizard_label"
+            class="com.stefanocottafavi.airfoil.presentation.AirfoilModelWizard"
+            category="org.eclipse.emf.ecore.Wizard.category.ID"
+            icon="icons/full/obj16/AirfoilModelFile.gif">
+         <description>%_UI_AirfoilModelWizard_description</description>
+         <selection class="org.eclipse.core.resources.IResource"/>
+      </wizard>
+   </extension>
+
+   <extension point="org.eclipse.ui.editors">
+      <!-- @generated airfoil -->
+      <editor
+            id="com.stefanocottafavi.airfoil.presentation.AirfoilEditorID"
+            name="%_UI_AirfoilEditor_label"
+            icon="icons/full/obj16/AirfoilModelFile.gif"
+            extensions="airfoil"
+            class="com.stefanocottafavi.airfoil.presentation.AirfoilEditor"
+            contributorClass="com.stefanocottafavi.airfoil.presentation.AirfoilActionBarContributor">
+      </editor>
+   </extension>
+   <!--
+   <extension
+         point="org.eclipse.ui.importWizards">
+      <category
+            id="sc.ndt.aml.editor.importWizards.sampleCategory"
+            name="Sample File Import">
+      </category>
+      <wizard
+            category="sc.ndt.aml.editor.importWizards.sampleCategory"
+            class="sc.ndt.aml.editor.importWizards.ImportWizard"
+            icon="icons/sample.gif"
+            id="sc.ndt.aml.editor.importWizards.ImportWizard"
+            name="Import File">
+         <description>
+            Import a file from the local file system into the workspace.
+         </description>
+      </wizard>
+   </extension>-->
+
+
+</plugin>

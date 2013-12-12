@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="ASCII"?>
+<xsd2ecore:XSD2EcoreMappingRoot xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI"
+    xmlns:xsd2ecore="http://www.eclipse.org/emf/2002/XSD2Ecore" inputs="../assets/airfoil.xsd#/" outputs="airfoil.ecore#/"
+    topToBottom="true">
+  <nested inputs="bundleentry://465.fwk416403358/cache/www.w3.org/2001/XMLSchema.xsd#//string;XSDSimpleTypeDefinition=9"
+      outputs="http://www.eclipse.org/emf/2003/XMLType#//String"/>
+  <nested inputs="bundleentry://465.fwk416403358/cache/www.w3.org/2001/XMLSchema.xsd#//double;XSDSimpleTypeDefinition=12"
+      outputs="http://www.eclipse.org/emf/2003/XMLType#//Double"/>
+  <nested inputs="bundleentry://465.fwk416403358/cache/www.w3.org/2001/XMLSchema.xsd#//integer;XSDSimpleTypeDefinition=40"
+      outputs="http://www.eclipse.org/emf/2003/XMLType#//Integer"/>
+  <nested inputs="../assets/airfoil.xsd#//pointType;XSDComplexTypeDefinition=9" outputs="airfoil.ecore#//PointType">
+    <nested inputs="../assets/airfoil.xsd#//pointType;XSDComplexTypeDefinition=9/XSDParticle/XSDModelGroup/XSDParticle"
+        outputs="airfoil.ecore#//PointType/x"/>
+    <nested inputs="../assets/airfoil.xsd#//pointType;XSDComplexTypeDefinition=9/XSDParticle/XSDModelGroup/XSDParticle=1"
+        outputs="airfoil.ecore#//PointType/y"/>
+    <nested inputs="../assets/airfoil.xsd#//pointType;XSDComplexTypeDefinition=9/XSDParticle/XSDModelGroup/XSDParticle=2"
+        outputs="airfoil.ecore#//PointType/z"/>
+    <nested inputs="../assets/airfoil.xsd#//pointType;XSDComplexTypeDefinition=9/XSDAttributeUse"
+        outputs="airfoil.ecore#//PointType/id"/>
+  </nested>
+  <nested inputs="../assets/airfoil.xsd#//scalingType;XSDComplexTypeDefinition=13"
+      outputs="airfoil.ecore#//ScalingType">
+    <nested inputs="../assets/airfoil.xsd#//scalingType;XSDComplexTypeDefinition=13/XSDParticle/XSDModelGroup/XSDParticle"
+        outputs="airfoil.ecore#//ScalingType/point"/>
+  </nested>
+  <nested inputs="../assets/airfoil.xsd#//translationType;XSDComplexTypeDefinition=11"
+      outputs="airfoil.ecore#//TranslationType">
+    <nested inputs="../assets/airfoil.xsd#//translationType;XSDComplexTypeDefinition=11/XSDParticle/XSDModelGroup/XSDParticle"
+        outputs="airfoil.ecore#//TranslationType/point"/>
+  </nested>
+  <nested inputs="../assets/airfoil.xsd#//rotationType;XSDComplexTypeDefinition=12"
+      outputs="airfoil.ecore#//RotationType">
+    <nested inputs="../assets/airfoil.xsd#//rotationType;XSDComplexTypeDefinition=12/XSDParticle/XSDModelGroup/XSDParticle"
+        outputs="airfoil.ecore#//RotationType/point"/>
+  </nested>
+  <nested inputs="../assets/airfoil.xsd#//transformationType;XSDComplexTypeDefinition=10"
+      outputs="airfoil.ecore#//TransformationType">
+    <nested inputs="../assets/airfoil.xsd#//transformationType;XSDComplexTypeDefinition=10/XSDParticle/XSDModelGroup/XSDParticle"
+        outputs="airfoil.ecore#//TransformationType/scaling"/>
+    <nested inputs="../assets/airfoil.xsd#//transformationType;XSDComplexTypeDefinition=10/XSDParticle/XSDModelGroup/XSDParticle=1"
+        outputs="airfoil.ecore#//TransformationType/translation"/>
+    <nested inputs="../assets/airfoil.xsd#//transformationType;XSDComplexTypeDefinition=10/XSDParticle/XSDModelGroup/XSDParticle=2"
+        outputs="airfoil.ecore#//TransformationType/rotation"/>
+  </nested>
+  <nested inputs="../assets/airfoil.xsd#//coordinatesType;XSDComplexTypeDefinition=7"
+      outputs="airfoil.ecore#//CoordinatesType">
+    <nested inputs="../assets/airfoil.xsd#//coordinatesType;XSDComplexTypeDefinition=7/XSDParticle/XSDModelGroup/XSDParticle"
+        outputs="airfoil.ecore#//CoordinatesType/point"/>
+    <nested inputs="../assets/airfoil.xsd#//coordinatesType;XSDComplexTypeDefinition=7/XSDAttributeUse"
+        outputs="airfoil.ecore#//CoordinatesType/count"/>
+  </nested>
+  <nested inputs="../assets/airfoil.xsd#//elementType;XSDComplexTypeDefinition=8"
+      outputs="airfoil.ecore#//ElementType">
+    <nested inputs="../assets/airfoil.xsd#//elementType;XSDComplexTypeDefinition=8/XSDParticle/XSDModelGroup/XSDParticle"
+        outputs="airfoil.ecore#//ElementType/transformation"/>
+    <nested inputs="../assets/airfoil.xsd#//elementType;XSDComplexTypeDefinition=8/XSDParticle/XSDModelGroup/XSDParticle=1"
+        outputs="airfoil.ecore#//ElementType/coordinates"/>
+    <nested inputs="../assets/airfoil.xsd#//elementType;XSDComplexTypeDefinition=8/XSDAttributeUse"
+        outputs="airfoil.ecore#//ElementType/id"/>
+  </nested>
+  <nested inputs="../assets/airfoil.xsd#//elementsType;XSDComplexTypeDefinition" outputs="airfoil.ecore#//ElementsType">
+    <nested inputs="../assets/airfoil.xsd#//elementsType;XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle"
+        outputs="airfoil.ecore#//ElementsType/element"/>
+    <nested inputs="../assets/airfoil.xsd#//elementsType;XSDComplexTypeDefinition/XSDAttributeUse"
+        outputs="airfoil.ecore#//ElementsType/count"/>
+  </nested>
+  <nested inputs="../assets/airfoil.xsd#//parameterType;XSDComplexTypeDefinition=3"
+      outputs="airfoil.ecore#//ParameterType">
+    <nested inputs="../assets/airfoil.xsd#//parameterType;XSDComplexTypeDefinition=3/XSDAttributeUse"
+        outputs="airfoil.ecore#//ParameterType/name"/>
+  </nested>
+  <nested inputs="../assets/airfoil.xsd#//parametersType;XSDComplexTypeDefinition=2"
+      outputs="airfoil.ecore#//ParametersType">
+    <nested inputs="../assets/airfoil.xsd#//parametersType;XSDComplexTypeDefinition=2/XSDParticle/XSDModelGroup/XSDParticle"
+        outputs="airfoil.ecore#//ParametersType/parameter"/>
+    <nested inputs="../assets/airfoil.xsd#//parametersType;XSDComplexTypeDefinition=2/XSDAttributeUse"
+        outputs="airfoil.ecore#//ParametersType/count"/>
+  </nested>
+  <nested inputs="../assets/airfoil.xsd#//dataType;XSDComplexTypeDefinition=6" outputs="airfoil.ecore#//DataType">
+    <nested inputs="../assets/airfoil.xsd#//dataType;XSDComplexTypeDefinition=6/XSDParticle/XSDModelGroup/XSDParticle"
+        outputs="airfoil.ecore#//DataType/angle"/>
+    <nested inputs="../assets/airfoil.xsd#//dataType;XSDComplexTypeDefinition=6/XSDParticle/XSDModelGroup/XSDParticle=1"
+        outputs="airfoil.ecore#//DataType/cl"/>
+    <nested inputs="../assets/airfoil.xsd#//dataType;XSDComplexTypeDefinition=6/XSDParticle/XSDModelGroup/XSDParticle=2"
+        outputs="airfoil.ecore#//DataType/cd"/>
+    <nested inputs="../assets/airfoil.xsd#//dataType;XSDComplexTypeDefinition=6/XSDParticle/XSDModelGroup/XSDParticle=3"
+        outputs="airfoil.ecore#//DataType/cm"/>
+  </nested>
+  <nested inputs="bundleentry://465.fwk416403358/cache/www.w3.org/2001/XMLSchema.xsd#//short;XSDSimpleTypeDefinition=45"
+      outputs="http://www.eclipse.org/emf/2003/XMLType#//Short"/>
+  <nested inputs="../assets/airfoil.xsd#//tableType;XSDComplexTypeDefinition=5" outputs="airfoil.ecore#//TableType">
+    <nested inputs="../assets/airfoil.xsd#//tableType;XSDComplexTypeDefinition=5/XSDParticle/XSDModelGroup/XSDParticle"
+        outputs="airfoil.ecore#//TableType/data"/>
+    <nested inputs="../assets/airfoil.xsd#//tableType;XSDComplexTypeDefinition=5/XSDAttributeUse=3"
+        outputs="airfoil.ecore#//TableType/count"/>
+    <nested inputs="../assets/airfoil.xsd#//tableType;XSDComplexTypeDefinition=5/XSDAttributeUse"
+        outputs="airfoil.ecore#//TableType/id"/>
+    <nested inputs="../assets/airfoil.xsd#//tableType;XSDComplexTypeDefinition=5/XSDAttributeUse=1"
+        outputs="airfoil.ecore#//TableType/name"/>
+    <nested inputs="../assets/airfoil.xsd#//tableType;XSDComplexTypeDefinition=5/XSDAttributeUse=2"
+        outputs="airfoil.ecore#//TableType/re"/>
+  </nested>
+  <nested inputs="../assets/airfoil.xsd#//tablesType;XSDComplexTypeDefinition=4" outputs="airfoil.ecore#//TablesType">
+    <nested inputs="../assets/airfoil.xsd#//tablesType;XSDComplexTypeDefinition=4/XSDParticle/XSDModelGroup/XSDParticle"
+        outputs="airfoil.ecore#//TablesType/table"/>
+    <nested inputs="../assets/airfoil.xsd#//tablesType;XSDComplexTypeDefinition=4/XSDAttributeUse"
+        outputs="airfoil.ecore#//TablesType/count"/>
+  </nested>
+  <nested inputs="../assets/airfoil.xsd#//aerodynamicsType;XSDComplexTypeDefinition=1"
+      outputs="airfoil.ecore#//AerodynamicsType">
+    <nested inputs="../assets/airfoil.xsd#//aerodynamicsType;XSDComplexTypeDefinition=1/XSDParticle/XSDModelGroup/XSDParticle"
+        outputs="airfoil.ecore#//AerodynamicsType/parameters"/>
+    <nested inputs="../assets/airfoil.xsd#//aerodynamicsType;XSDComplexTypeDefinition=1/XSDParticle/XSDModelGroup/XSDParticle=1"
+        outputs="airfoil.ecore#//AerodynamicsType/tables"/>
+  </nested>
+  <nested inputs="../assets/airfoil.xsd#//airfoil;XSDElementDeclaration/XSDComplexTypeDefinition"
+      outputs="airfoil.ecore#//AirfoilType">
+    <nested inputs="../assets/airfoil.xsd#//airfoil;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle"
+        outputs="airfoil.ecore#//AirfoilType/name"/>
+    <nested inputs="../assets/airfoil.xsd#//airfoil;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=1"
+        outputs="airfoil.ecore#//AirfoilType/elements"/>
+    <nested inputs="../assets/airfoil.xsd#//airfoil;XSDElementDeclaration/XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle=2"
+        outputs="airfoil.ecore#//AirfoilType/aerodynamics"/>
+  </nested>
+  <nested inputs="../assets/airfoil.xsd#//airfoil;XSDElementDeclaration" outputs="airfoil.ecore#//DocumentRoot/airfoil"/>
+  <nested inputs="../assets/airfoil.xsd#//name;XSDElementDeclaration=1" outputs="airfoil.ecore#//DocumentRoot/name"/>
+  <nested inputs="../assets/airfoil.xsd#//x;XSDElementDeclaration=2" outputs="airfoil.ecore#//DocumentRoot/x"/>
+  <nested inputs="../assets/airfoil.xsd#//y;XSDElementDeclaration=3" outputs="airfoil.ecore#//DocumentRoot/y"/>
+  <nested inputs="../assets/airfoil.xsd#//z;XSDElementDeclaration=4" outputs="airfoil.ecore#//DocumentRoot/z"/>
+  <nested inputs="../assets/airfoil.xsd#//id;XSDAttributeDeclaration=1" outputs="airfoil.ecore#//DocumentRoot/id"/>
+  <nested inputs="../assets/airfoil.xsd#//name;XSDAttributeDeclaration" outputs="airfoil.ecore#//DocumentRoot/name1"/>
+</xsd2ecore:XSD2EcoreMappingRoot>

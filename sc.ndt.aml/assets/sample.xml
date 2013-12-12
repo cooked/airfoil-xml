@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<airfoil xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+         xmlns="http://www.mh-aerotools.de/airfoil-schema" 
+         xsi:schemaLocation="http://www.mh-aerotools.de/airfoils/xml-schemas/airfoil-schema airfoil-schema.xsd">
+
+ <!-- the previous lines describe the location of the schema document which defines the
+      default "name space". These are used for validating the contents of the file.
+      First the prefix "xsi" is defined to refer the elements defined in the
+      "http://www.w3.org/2001/XMLSchema-instance" schema. This standard schema is usually
+      embedded in all parsers, so no location must be given.
+      Then the default namespace is defined to be "http://www.mh-aerotools.de/airfoil-schema".
+      Finally the string assigned to "xsi:schemaLocation" links this namespace to the file
+      "airfoil-schema.xsd". This is a location where the parser can find the schema
+      description file. If it is in a different directory as the airfoil file, it would
+      maybe read "./schemas/airfoil-schema.xsd".
+      It could also be an URL like "http://www.mh-aerotools.de/airfoils/xml-schemas/airfoil-schema.xsd"
+      if you prefer to access the document via the internet.
+      --> 
+
+<name>MH 20</name>
+
+<desc>bla bla bla</desc>
+
+<elements>
+  <element>
+    <transformation>
+      <scaling>
+        <point><x>1.0</x><y>1.0</y><z>1.0</z></point>
+      </scaling>
+      <translation>
+        <point><x>0.0</x><y>0.0</y><z>0.0</z></point>
+      </translation>
+      <rotation>
+        <point><x>0.0</x><y>0.0</y><z>0.0</z></point>
+      </rotation>
+    </transformation>
+
+    <coordinates>
+      <point><x>1.0000000</x><y>0.0000000</y><z>0.000</z></point>
+      <point><x>0.9974300</x><y>-0.0000100</y><z>0.000</z></point>
+      <point><x>0.9897699</x><y>0.0000700</y><z>0.000</z></point>
+      <point><x>0.9770700</x><y>0.0005000</y><z>0.000</z></point>
+      <point><x>0.9594799</x><y>0.0014100</y><z>0.000</z></point>
+      <point><x>0.9770700</x><y>-0.0025500</y><z>0.000</z></point>
+      <point><x>0.9897699</x><y>-0.0010600</y><z>0.000</z></point>
+      <point><x>0.9974300</x><y>-0.0002400</y><z>0.000</z></point>
+      <point><x>1.0000000</x><y>-0.0000400</y><z>0.000</z></point>
+    </coordinates>
+  </element>
+</elements>
+
+<aerodynamics>
+	<parameters>
+		<parameter name="AoA">1</parameter>
+		<parameter name="atro1">2</parameter>
+		<parameter name="altro2">3</parameter>
+	</parameters>
+	<tables>
+		<table id="tab1" re="2000">
+			<data><angle>0</angle><cl>0</cl><cd>0</cd><cm>0</cm></data>
+			<data><angle>0</angle><cl>0</cl><cd>0</cd><cm>0</cm></data>
+			<data><angle>0</angle><cl>0</cl><cd>0</cd><cm>0</cm></data>
+			<data><angle>0</angle><cl>0</cl><cd>0</cd><cm>0</cm></data>
+		</table>
+		<table id="tab2" re="4000">
+			<data><angle>0</angle><cl>0</cl><cd>0</cd><cm>0</cm></data>
+			<data><angle>0</angle><cl>0</cl><cd>0</cd><cm>0</cm></data>
+			<data><angle>0</angle><cl>0</cl><cd>0</cd><cm>0</cm></data>
+			<data><angle>0</angle><cl>0</cl><cd>0</cd><cm>0</cm></data>
+		</table>
+		<table id="tab3" re="6000">
+			<data><angle>0</angle><cl>0</cl><cd>0</cd><cm>0</cm></data>
+			<data><angle>0</angle><cl>0</cl><cd>0</cd><cm>0</cm></data>
+			<data><angle>0</angle><cl>0</cl><cd>0</cd><cm>0</cm></data>
+			<data><angle>0</angle><cl>0</cl><cd>0</cd><cm>0</cm></data>
+		</table>
+	</tables>
+</aerodynamics>
+
+
+</airfoil>
